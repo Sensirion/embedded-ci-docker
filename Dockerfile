@@ -6,6 +6,8 @@ RUN apt-get update \
         texlive-latex-recommended \
         texlive-fonts-recommended \
         texlive-xetex \
+        doxygen \
+        python3-pip \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/
 
