@@ -1,7 +1,7 @@
 FROM gcc:7.5
 
 RUN apt-get update \
-    && apt-get install -y zip clang-format-6.0 \
+    && apt-get install --no-install-recommends -y zip clang-format-6.0 \
         clang-format-7 \
         pandoc \
         texlive-latex-recommended \
