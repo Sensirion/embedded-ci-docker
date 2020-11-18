@@ -10,6 +10,7 @@ RUN apt-get update \
         latexmk \
         doxygen \
         python3-pip \
+        cpputest \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/
 
