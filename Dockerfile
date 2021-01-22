@@ -11,6 +11,7 @@ RUN apt-get update \
         doxygen \
         python3-pip \
         cpputest \
+        cppcheck \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/
 
