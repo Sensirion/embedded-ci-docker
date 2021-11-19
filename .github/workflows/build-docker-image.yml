@@ -1,0 +1,14 @@
+name: Build Docker
+
+on:
+  - push
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    env:
+      DOCKER_REPO: "sensirion/embedded-ci"
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build Docker image
+        run: docker build . -t "$DOCKER_REPO"         
